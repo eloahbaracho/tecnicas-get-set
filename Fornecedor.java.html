@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Fornecedor.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Fornecedor.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">javax.swing.*</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">Fornecedor </span><span class="s0">extends </span><span class="s1">Pessoa {</span>
+    <span class="s0">private float </span><span class="s1">valorCompra</span><span class="s0">;</span>
+    <span class="s1">Fornecedor() {}</span>
+    <span class="s1">Fornecedor(String n</span><span class="s0">, </span><span class="s1">String f</span><span class="s0">, </span><span class="s1">Float vc) {</span>
+        <span class="s0">super</span><span class="s1">(n</span><span class="s0">, </span><span class="s1">f)</span><span class="s0">;</span>
+        <span class="s1">valorCompra = vc</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public float </span><span class="s1">getValorCompra() {</span>
+        <span class="s0">return </span><span class="s1">valorCompra</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">setValorCompra(</span><span class="s0">float </span><span class="s1">valorCompra) {</span>
+        <span class="s0">this</span><span class="s1">.valorCompra = valorCompra</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public void </span><span class="s1">print() {</span>
+        <span class="s0">super</span><span class="s1">.print()</span><span class="s0">;</span>
+        <span class="s1">JOptionPane.showMessageDialog(</span><span class="s0">null, </span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">Valor da Compra:&quot; </span><span class="s1">+ valorCompra)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">public void </span><span class="s1">calculaImpostos(</span><span class="s0">float </span><span class="s1">imposto) {</span>
+        <span class="s1">valorCompra += valorCompra *imposto/</span><span class="s3">100</span><span class="s0">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
